@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+        ContaBancaria cb1 = new ContaBancaria();
+        ContaBancaria cb2 = new ContaBancaria();
+
+        cb1.setNomeCliente("Joaquim");
+        cb1.setNumConta(123);
+        cb1.setSaldo(1000.0);
+
+        cb2.setNomeCliente("Lucas");
+        cb2.setNumConta(456);
+        cb2.setSaldo(2000.0);
+
+        cb1.depositar(500.0);
+        cb2.depositar(1000.0);
+
+        cb1.sacar(300.0);
+        cb2.sacar(500.0);
+
+        System.out.println("Nome do cliente: " + cb1.getNomeCliente());
+        System.out.println("Número da conta: " + cb1.getNumConta());
+        System.out.println("Saldo da conta: " + cb1.getSaldo());
+
+        System.out.println("Nome do cliente: " + cb2.getNomeCliente());
+        System.out.println("Número da conta: " + cb2.getNumConta());
+        System.out.println("Saldo da conta: " + cb2.getSaldo());
+    }
+}
